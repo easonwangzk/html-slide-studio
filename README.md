@@ -14,7 +14,7 @@ Currently, I’m exploring **Large Language Models (LLMs)** and **multimodal lea
 
 - 🔬 Research-driven with a strong foundation in **deep learning**, **time series forecasting**, and **recommendation systems**
 - 🧠 Recently optimized a **DNN-based credit default model**
-- 🌍 Interned at Tencent, Roland Berger, Deloitte, GM, and Continental Automotive across business analytics, risk modeling, and automation
+- 🌍 Interned at Amazon, Tencent, Roland Berger, Deloitte, GM, and Continental Automotive across business analytics, risk modeling, and automation
 - ☁️ Proficient in **cloud deployment** using AWS Lambda, Docker, and Google Cloud Platform
 - 📈 Strong focus on **interpretable AI**, using SHAP/LIME to bridge models and decision-makers
 
