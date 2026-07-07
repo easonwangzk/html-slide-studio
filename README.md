@@ -51,6 +51,12 @@ Currently, I’m exploring **Large Language Models (LLMs)** and **multimodal lea
 
 ---
 
+## OpenAI Learning Repo
+
+- [OpenAI Learning Repository](./openai-repo) for hands-on notes and examples covering text, vision, image generation, video workflows, speech-to-text, and text-to-speech.
+
+---
+
 ## Let's Connect  
 
 -  [LinkedIn](https://linkedin.com/in/easonwang-a4aa762a9)  
