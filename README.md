@@ -1,8 +1,6 @@
 # Hi, I'm Zikai Wang
 
-**Solutions Engineer @ Microsoft Azure (Shanghai)**
-
-Previously worked at **Tencent** and **Amazon**.
+**Azure AI Solutions Engineer @ Microsoft (Shanghai) | Enterprise GenAI Delivery | ex-Tencent, ex-Amazon**
 
 I focus on practical AI engineering: building reliable GenAI solutions, shipping production-ready cloud architectures, and helping teams move from prototypes to measurable business outcomes.
 
