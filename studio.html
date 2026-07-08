@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slide Studio</title>
+    <link rel="stylesheet" href="/src/modern-studio.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header class="header">
+        <div class="header-content">
+          <h1 class="logo">Slide Studio</h1>
+          <p class="tagline">Upload · Preview · Present</p>
+        </div>
+      </header>
+
+      <!-- Main Content -->
+      <main class="main">
+        <!-- Upload Section -->
+        <section class="upload-section">
+          <div class="upload-card">
+            <div class="upload-icon">📄</div>
+            <h2>上传 HTML</h2>
+            <p>选择 HTML 文件进行预览和演示</p>
+            <div class="file-input-wrapper">
+              <input id="htmlUpload" type="file" accept=".html,text/html" />
+              <label for="htmlUpload" class="file-label">选择文件</label>
+            </div>
+            <p class="file-hint">或直接拖拽 HTML 文件到此处</p>
+          </div>
+
+          <!-- Quick Actions -->
+          <div class="actions-grid">
+            <button id="openFullscreenBtn" class="action-btn" title="全屏演示">
+              <span class="icon">⛶</span>
+              <span>全屏</span>
+            </button>
+            <button id="openWindowBtn" class="action-btn" title="新窗口演示">
+              <span class="icon">◻</span>
+              <span>新窗口</span>
+            </button>
+            <button id="openPresenterBtn" class="action-btn" title="演讲者视图">
+              <span class="icon">👤</span>
+              <span>演讲者</span>
+            </button>
+            <button id="openTeleprompterBtn" class="action-btn" title="打开题词器">
+              <span class="icon">📝</span>
+              <span>题词器</span>
+            </button>
+          </div>
+        </section>
+
+        <!-- Preview Section -->
+        <section class="preview-section">
+          <div class="preview-header">
+            <h3>预览</h3>
+            <span id="statusInfo" class="status">就绪</span>
+          </div>
+          <iframe id="previewFrame" title="HTML preview"></iframe>
+        </section>
+
+        <!-- Code Section -->
+        <section class="code-section">
+          <div class="code-header">
+            <h3>HTML 代码</h3>
+            <div class="code-actions">
+              <button id="copyBtn" class="icon-btn" title="复制">📋</button>
+              <button id="downloadBtn" class="icon-btn" title="下载">⬇</button>
+            </div>
+          </div>
+          <textarea id="htmlOutput" spellcheck="false" placeholder="上传 HTML 文件后将显示在此"></textarea>
+        </section>
+
+        <!-- Notes Section -->
+        <section class="notes-section">
+          <div class="notes-header">
+            <h3>题词内容</h3>
+            <div class="notes-actions">
+              <button id="fillNotesBtn" class="icon-btn" title="从当前页提取备注">🔄</button>
+            </div>
+          </div>
+          <textarea
+            id="teleprompterInput"
+            placeholder="在这里输入演讲稿或题词内容，点击「题词器」按钮后会自动滚动显示"
+          ></textarea>
+        </section>
+      </main>
+    </div>
+
+    <script type="module" src="/src/studio.js"></script>
+  </body>
+</html>

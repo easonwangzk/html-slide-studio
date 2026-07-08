@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,700&display=swap");
+
+:root {
+  --bg-a: #f6f1e6;
+  --bg-b: #efe8d6;
+  --ink: #1d2939;
+  --muted: #475467;
+  --accent: #d6452f;
+  --accent-2: #1f6feb;
+  --card: #fffcf4;
+  --line: #222;
+  --shadow: rgba(20, 20, 20, 0.16);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  color: var(--ink);
+  font-family: "Bricolage Grotesque", "Segoe UI", sans-serif;
+  background:
+    radial-gradient(circle at 16% 14%, rgba(255, 207, 120, 0.34), transparent 36%),
+    radial-gradient(circle at 84% 82%, rgba(113, 207, 255, 0.26), transparent 32%),
+    linear-gradient(145deg, var(--bg-a) 0%, var(--bg-b) 100%);
+}
+
+.studio-shell {
+  display: grid;
+  grid-template-columns: 460px minmax(0, 1fr);
+  gap: 16px;
+  padding: 16px;
+  min-height: 100vh;
+}
+
+.control-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.brand {
+  background: var(--card);
+  border: 2px solid var(--line);
+  border-radius: 18px;
+  box-shadow: 8px 8px 0 #111;
+  padding: 18px;
+}
+
+.brand h1 {
+  margin: 0;
+  font-family: "Newsreader", Georgia, serif;
+  font-size: 1.9rem;
+}
+
+.brand p {
+  margin: 10px 0 0;
+  color: var(--muted);
+}
+
+.card {
+  background: var(--card);
+  border: 2px solid var(--line);
+  border-radius: 16px;
+  box-shadow: 6px 6px 0 #171717;
+  padding: 14px;
+}
+
+.card h2 {
+  margin: 0 0 10px;
+  font-family: "Newsreader", Georgia, serif;
+  font-size: 1.25rem;
+}
+
+.label {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin: 8px 0 6px;
+}
+
+textarea,
+select,
+input[type="file"] {
+  width: 100%;
+  border: 1px solid #2f2f2f;
+  background: #fffdfa;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font: inherit;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.row {
+  margin-top: 10px;
+}
+
+.button-row {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+.quick-prompts {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.chip {
+  border: 1px dashed #3f3f3f;
+  background: #fff8e9;
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-size: 0.82rem;
+  cursor: pointer;
+}
+
+.chip:hover {
+  background: #ffe8cf;
+}
+
+.btn,
+.btn-link {
+  border: 1px solid #202020;
+  background: #f8f8f8;
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-weight: 600;
+  color: #111;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn:hover,
+.btn-link:hover {
+  transform: translateY(-1px);
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.btn-primary {
+  background: linear-gradient(125deg, var(--accent), #f07b37);
+  color: #fff;
+  border-color: #7f1b0f;
+}
+
+.btn-small {
+  padding: 5px 10px;
+  font-size: 0.82rem;
+}
+
+.preview-panel {
+  background: #fff;
+  border: 2px solid #1f1f1f;
+  border-radius: 16px;
+  box-shadow: 8px 8px 0 #111;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-height: 0;
+}
+
+.preview-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 700;
+  gap: 10px;
+}
+
+#previewFrame {
+  width: 100%;
+  height: 56vh;
+  border: 1px solid #222;
+  border-radius: 10px;
+  background: #fff;
+}
+
+#htmlOutput {
+  min-height: 200px;
+  font-family: "Cascadia Code", "Consolas", monospace;
+  font-size: 0.86rem;
+}
+
+.status-card p {
+  margin: 0 0 8px;
+  font-size: 0.9rem;
+}
+
+#statusInfo {
+  font-weight: 600;
+  color: #1f6feb;
+  margin-bottom: 0;
+}
+
+#teleprompterInput {
+  min-height: 120px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 1060px) {
+  .studio-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .preview-toolbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #previewFrame {
+    height: 45vh;
+  }
+}

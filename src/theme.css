@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;700;800&display=swap");
+
+:root {
+  --stage-bg: #f5f1e8;
+  --ink: #1f2a37;
+  --muted: #4b5563;
+  --accent: #d14d2a;
+  --accent-soft: #ffd8cc;
+  --card: #fffcf7;
+  --shadow: rgba(20, 20, 20, 0.12);
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  background:
+    radial-gradient(circle at 8% 12%, #ffe8b9 0, transparent 28%),
+    radial-gradient(circle at 88% 82%, #c6f0ff 0, transparent 24%),
+    linear-gradient(135deg, #fdf8ef 0%, #f1ecdf 100%);
+  color: var(--ink);
+}
+
+.reveal {
+  font-family: "Manrope", "Segoe UI", sans-serif;
+  color: var(--ink);
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3 {
+  font-family: "Instrument Serif", Georgia, serif;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  color: #172030;
+}
+
+.reveal h1 {
+  font-size: 2.2em;
+}
+
+.reveal h2 {
+  font-size: 1.55em;
+}
+
+.reveal p,
+.reveal li {
+  color: var(--ink);
+  line-height: 1.45;
+}
+
+.reveal strong {
+  color: var(--accent);
+}
+
+.reveal .slides section {
+  text-align: left;
+}
+
+.reveal .slides section.boxed {
+  background: var(--card);
+  border: 2px solid #222;
+  border-radius: 24px;
+  box-shadow: 10px 10px 0 #111;
+  padding: 0.8em 1.1em;
+}
+
+.reveal .slides section.title-slide {
+  background: linear-gradient(140deg, rgba(255, 255, 255, 0.87), rgba(255, 247, 232, 0.87));
+  border: 2px solid #1d1d1d;
+  border-radius: 28px;
+  box-shadow: 14px 14px 0 #222;
+  padding: 1em 1.2em;
+}
+
+.reveal .pill {
+  display: inline-block;
+  padding: 0.2em 0.6em;
+  border: 1px solid #121212;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  font-size: 0.55em;
+  font-weight: 700;
+}
+
+.reveal .media-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.reveal img,
+.reveal video {
+  border-radius: 14px;
+  border: 1px solid #202020;
+  box-shadow: 0 8px 22px var(--shadow);
+}
+
+.reveal .fit-video {
+  width: 100%;
+  max-height: 430px;
+}
+
+.reveal .controls {
+  color: #111;
+}
+
+.reveal .progress {
+  color: var(--accent);
+  height: 5px;
+}
+
+.teleprompter {
+  position: fixed;
+  right: 22px;
+  top: 22px;
+  width: min(28vw, 420px);
+  height: min(64vh, 580px);
+  background: rgba(20, 20, 20, 0.92);
+  color: #f6f6f4;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 16px;
+  padding: 20px;
+  font-size: 1.05rem;
+  line-height: 1.55;
+  overflow-y: auto;
+  transform: translateY(-20px) scale(0.98);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 220ms ease, transform 220ms ease;
+  z-index: 90;
+}
+
+.teleprompter--open {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0) scale(1);
+}
+
+@media (max-width: 960px) {
+  .reveal .media-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .teleprompter {
+    width: calc(100vw - 30px);
+    right: 15px;
+    left: 15px;
+    top: auto;
+    bottom: 15px;
+    height: 38vh;
+    font-size: 0.95rem;
+  }
+}

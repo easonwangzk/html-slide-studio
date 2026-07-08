@@ -1,0 +1,383 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* Header */
+.header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 40px 20px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.logo {
+  margin: 0 0 8px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.tagline {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 300;
+  opacity: 0.9;
+  letter-spacing: 2px;
+}
+
+/* Main */
+.main {
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Upload Section */
+.upload-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.upload-card {
+  background: white;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.upload-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.2);
+}
+
+.upload-icon {
+  font-size: 3rem;
+  margin-bottom: 16px;
+}
+
+.upload-card h2 {
+  margin: 16px 0 8px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.upload-card p {
+  margin: 0 0 8px;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.file-input-wrapper {
+  position: relative;
+  margin: 24px 0;
+}
+
+#htmlUpload {
+  display: none;
+}
+
+.file-label {
+  display: inline-block;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.file-label:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(102, 126, 234, 0.4);
+}
+
+.file-label:active {
+  transform: scale(0.98);
+}
+
+.file-hint {
+  margin: 12px 0 0;
+  font-size: 0.85rem;
+  color: #999;
+  font-style: italic;
+}
+
+/* Actions Grid */
+.actions-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.action-btn {
+  background: white;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 16px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.action-btn:hover {
+  border-color: #667eea;
+  color: #667eea;
+  background: #f8f9ff;
+  transform: translateY(-2px);
+}
+
+.action-btn .icon {
+  font-size: 1.4rem;
+}
+
+/* Preview Section */
+.preview-section {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  min-height: 500px;
+}
+
+.preview-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.preview-header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.status {
+  font-size: 0.85rem;
+  padding: 6px 12px;
+  background: #e8f5e9;
+  color: #2e7d32;
+  border-radius: 20px;
+}
+
+#previewFrame {
+  width: 100%;
+  height: 100%;
+  min-height: 450px;
+  border: none;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+/* Code Section */
+.code-section {
+  grid-column: 1 / -1;
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.code-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.code-header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.code-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.icon-btn {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.icon-btn:hover {
+  border-color: #667eea;
+  background: #f8f9ff;
+}
+
+#htmlOutput {
+  width: 100%;
+  height: 300px;
+  padding: 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-family: "Monaco", "Menlo", "Ubuntu Mono", monospace;
+  font-size: 0.9rem;
+  color: #333;
+  resize: vertical;
+  background: #fafafa;
+}
+
+#htmlOutput::placeholder {
+  color: #999;
+}
+
+/* Notes Section */
+.notes-section {
+  grid-column: 1 / -1;
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.notes-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.notes-header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.notes-actions {
+  display: flex;
+  gap: 8px;
+}
+
+#teleprompterInput {
+  width: 100%;
+  height: 200px;
+  padding: 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  color: #333;
+  resize: vertical;
+  background: #fafafa;
+}
+
+#teleprompterInput::placeholder {
+  color: #999;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+
+  .actions-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .code-section,
+  .notes-section {
+    grid-column: 1;
+  }
+
+  .logo {
+    font-size: 1.8rem;
+  }
+
+  .tagline {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .header {
+    padding: 24px 16px;
+  }
+
+  .main {
+    padding: 20px 16px;
+    gap: 16px;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .tagline {
+    font-size: 0.85rem;
+  }
+
+  .upload-card {
+    padding: 20px;
+  }
+
+  .actions-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #previewFrame {
+    min-height: 300px;
+  }
+
+  #htmlOutput,
+  #teleprompterInput {
+    font-size: 0.85rem;
+  }
+}

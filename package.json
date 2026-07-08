@@ -1,0 +1,18 @@
+{
+  "name": "html-slide-studio",
+  "version": "0.1.0",
+  "private": true,
+  "description": "PPT-like HTML demo repo with live demo, speaker view, teleprompter, and media support.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview --host"
+  },
+  "dependencies": {
+    "reveal.js": "^5.1.0"
+  },
+  "devDependencies": {
+    "vite": "^5.4.10"
+  }
+}
