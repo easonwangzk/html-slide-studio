@@ -1,27 +1,35 @@
-# 👋 Hi, I'm Zikai Wang  
+# Hi, I'm Zikai Wang
 
-**Master's Student in Applied Data Science @ University of Chicago**  
-Aspiring **Data Scientist** | **Machine Learning Engineer** | **LLM Enthusiast**  
-Currently in Chicago | Fluent in Python, SQL, and cloud-based deployment
+**Solutions Engineer @ Microsoft Azure (Shanghai)**
 
----
+Previously worked at **Tencent** and **Amazon**.
 
-## About Me  
-
-I am passionate about transforming data into strategic decisions and scalable systems. With cross-industry experience—from automotive forecasting to SaaS product analytics, I build end-to-end machine learning pipelines, deploy predictive models in production, and translate data insights into business outcomes.
-
-Currently, I’m exploring **Large Language Models (LLMs)** and **multimodal learning**, integrating NLP pipelines with real-world applications such as recommendation systems and customer behavior modeling.
+I focus on practical AI engineering: building reliable GenAI solutions, shipping production-ready cloud architectures, and helping teams move from prototypes to measurable business outcomes.
 
 ---
 
-## Currently Working On  
+## About Me
 
-- Fine-tuning open-source LLMs  for **Medical bilingual Q&A** and **enterprise knowledge retrieval**
-- Building **LangChain**-powered pipelines integrated with **vector databases** 
+I work at the intersection of cloud platform engineering and applied AI. My day-to-day work is centered on Azure-native architecture, OpenAI-powered application patterns, and enterprise delivery standards for reliability, security, and scalability.
+
+Current areas of focus:
+
+- Azure AI and modern cloud solution design
+- LLM application engineering (RAG, tool calling, evaluation)
+- Multimodal workflows (text, vision, speech)
+- Production readiness: observability, cost-performance trade-offs, and governance
 
 ---
 
-## Tech Stack  
+## Currently Working On
+
+- Building enterprise AI solution patterns with Azure + OpenAI APIs
+- Designing LLM evaluation loops for quality, safety, latency, and cost
+- Improving multilingual knowledge workflows for real-world business scenarios
+
+---
+
+## Tech Stack
 
 ### Languages  
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
@@ -36,14 +44,14 @@ Currently, I’m exploring **Large Language Models (LLMs)** and **multimodal lea
 ![XGBoost](https://img.shields.io/badge/-XGBoost-FF6600?style=flat-square&logo=xgboost&logoColor=white)
 ![LangChain](https://img.shields.io/badge/-LangChain-000000?style=flat-square&logo=chainlink&logoColor=white)
 
-### ☁️ Cloud & DevOps  
-![Google Cloud](https://img.shields.io/badge/-Google%20Cloud-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
+### Cloud & DevOps
+![Microsoft Azure](https://img.shields.io/badge/-Microsoft%20Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
 ![AWS Lambda](https://img.shields.io/badge/-AWS%20Lambda-FF9900?style=flat-square&logo=amazonaws&logoColor=white)
 ![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 
 ---
 
-## 📊 GitHub Stats  
+## GitHub Stats
 
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=easonwangzk&show_icons=true&theme=tokyonight)  
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=easonwangzk&layout=compact&theme=tokyonight)  
@@ -51,13 +59,7 @@ Currently, I’m exploring **Large Language Models (LLMs)** and **multimodal lea
 
 ---
 
-## OpenAI Learning Repo
-
-- [OpenAI Learning Repository](./openai-repo) for hands-on notes and examples covering text, vision, image generation, video workflows, speech-to-text, and text-to-speech.
-
----
-
-## Let's Connect  
+## Let's Connect
 
 -  [LinkedIn](https://linkedin.com/in/easonwang-a4aa762a9)  
 -  [Email](mailto:easonwang@uchicago.edu)  
